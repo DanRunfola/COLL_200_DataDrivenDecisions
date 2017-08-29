@@ -1,0 +1,61 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{fullpage} % changes the margin
+\usepackage{listings}
+
+\begin{document}
+\noindent
+\large\textbf{Data Driven Decisionmaking} \hfill \textbf{Project 1} \\
+
+\section*{Retrieving Data from Non-traditional Sources}
+Your team has been asked to identify areas in the Williamsburg region (including the broader Hampton Roads region) that are underserved by health care facilities.  Your role on the team is to (a) access data on  care facilities from the two largest health providers in the area (Sentara and Riverside), (b) provide this data in a machine-readable format, and (c) create a map of this information.
+
+\section{Project Deliverables}
+You will need to turn in three deliverables as a part of this project:\\
+(1) A map of a dataset of all care facilities in the region, from both Sentara and Riverside.
+(2) A CSV dataset containing the following columns of data: \\
+\begin{itemize}
+\item Name of Location (may be frequently duplicate)
+\item Address of location
+\item City of location
+\item State of location
+\item Zipcode of location
+\item Latitude of location
+\item Longitude of Location
+\end{itemize}
+(3) A brief one-paragraph description of the code you used to produce 1 and 2.\\
+(4) You do not need to turn in your python code, as it will already be on the shared Jupyter hub!
+
+\section{Notes}
+In this project, you will first be given an example using Sentara locations.  Based on what you learn in this example, you will then create a web-scraping script that functions with Riverside locations.  All code should be implemented in the Jupyter SciClone environment.
+
+\section{Sentara Example}
+The goal of this section is to introduce you to web scraping, using the case of Sentara urgent care centers in the Williamsburg region as an example.  In this case, we will be taking the information on the Sentara website - https://www.sentara.com/hampton-roads-virginia/hospitalslocations/locations/sentara-urgent-care/locations.aspx - and downloading it into a machine readable CSV.  
+
+\subsection{Setting up Jupyter}
+As this is your first assignment, you will need to log in to Jupyter.  To do so, you go to: https://jupyter.sciclone.wm.edu.\\\vspace{0.1in}
+
+\textbf{TIP:} \textit{Make sure to type in https:// , and that you are on campus!  Off-campus access to SciClone is not allowed due to security reasons, unless you use a VPN. If you are attempting to access SciClone off campus, make sure you contact William and Mary IT to set up a VPN - it is recommended you do this at least one week before you will need it.}
+\vspace{0.1in}
+Once logged in to Jupyter, create a new Python 3 workbook. As a test, try typing in "ls" and then clicking play at the top of the Jupyter window - the contents of your SciClone home directory should print out.  You can also (for example) type in ls -l to show the rights and more details about all of your files.\\
+Click the scissor button at the top of Jupyter - this will delete the ls snippets you just created, and leave you with a blank screen.  You can always experiment on Jupyter by creating your own snippets and deleting them later.\\
+At the top of the screen, click on "Untitled" and name your workbook "Project 1".  From this point forward, remember to frequently click the "save" button (or save and checkpoint if you want to be able to revert!).\\
+
+To scrape from Sentara, first we'll load in our modules and pull the relevant information from the URL:
+\begin{lstlisting}
+from urllib import request
+from bs4 import BeautifulSoup
+\end{lstlisting}
+these modules will allow us to download web content into python objects to manipulate.
+
+\section{Riverside Tips}
+Riverside has two titles for it's urgent care facilities - MD Express and "urgent care".\\
+The list of riverside locations can be found at:\\
+https://www.riversideonline.com/
+
+\section{Stretch Goals}
+These goals are optional, and worth a very small amount (up to 5\% total of your assignment grade for all goals in total) of extra credit.
+(1) Include all Sentara facilities (not just urgent care centers).\\
+(2) Include a provider other than Sentara and Riverside.\\
+(3) Include a fast food restaraunt chain on your map.
+
+\end{document}
