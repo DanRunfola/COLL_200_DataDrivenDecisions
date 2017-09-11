@@ -1,0 +1,72 @@
+{
+    "info": [
+        "<b><font size=4>CSV Column Names</font></b><br/>Each CSV will contain a column labeled \"asdf_id\" which has values for each feature that are unique (within that boundary dataset), one or more columns for your extract data, followed by the original source attributes for the boundary file (e.g., from GADM)<br/><br/>The standard format for extract data column names is a three part string delimited by periods (.)<br/>&nbsp;&nbsp;&nbsp;&nbsp;Example:  <b>&#60;dataset&#62;.&#60;filter&#62;.&#60;method&#62;</b>  =  gpw_v4_count<b>.</b>2010<b>.</b>sum<br/><br/>For more details, please read the documentation pdf accompanying your request results.<br/>"
+    ], 
+    "raster_data": [
+        {
+            "files": [
+                {
+                    "path": "avhrr_ndvi_2014.tif", 
+                    "$$hashKey": "object:8469", 
+                    "name": "ltdr_avhrr_ndvi_v4_yearly_2014", 
+                    "display": "2014"
+                }
+            ], 
+            "$$hashKey": "object:8519", 
+            "name": "ltdr_avhrr_ndvi_v4_yearly", 
+            "custom_name": "Normalized Difference Vegetation Index - NDVI (LTDR v4 - AVHRR)", 
+            "title": "Normalized Difference Vegetation Index - NDVI (LTDR v4 - AVHRR)", 
+            "type": "raster", 
+            "base": "/sciclone/aiddata10/REU/geo/data/rasters/ltdr/avhrr_ndvi_v4/yearly", 
+            "temporal_type": "year", 
+            "options": {
+                "extract_types": [
+                    "mean"
+                ]
+            }
+        }
+    ], 
+    "custom_name": "Request 09-11-17 10:35", 
+    "release_data": [
+        {
+            "hash": "3161dcb82321a941537c753029cca3cb02f56468", 
+            "$$hashKey": "object:9094", 
+            "filters": {
+                "ad_sector_names": [
+                    "General environmental protection"
+                ]
+            }, 
+            "custom_name": "World Bank Geocoded Aid Data v1.4.2", 
+            "dataset": "worldbank_geocodedresearchrelease_level1_v1_4_2"
+        }
+    ], 
+    "priority": 0, 
+    "status": 2, 
+    "boundary": {
+        "path": "/sciclone/aiddata10/REU/geo/data/boundaries/gadm2.8/HND_adm2/HND_adm2.geojson", 
+        "description": "GADM Boundary File for ADM2 (Municipality) in Honduras.", 
+        "group": "hnd_gadm28", 
+        "name": "hnd_adm2_gadm28", 
+        "title": "Honduras ADM2 Boundary - GADM 2.8"
+    }, 
+    "_id": "59b69f1dc15e00afc75cd4b9", 
+    "email": "danr@wm.edu", 
+    "stage": [
+        {
+            "name": "submitted", 
+            "time": 1505140509
+        }, 
+        {
+            "name": "prepared", 
+            "time": 1505140567
+        }, 
+        {
+            "name": "processed", 
+            "time": 1505140567
+        }, 
+        {
+            "name": "completed", 
+            "time": 0
+        }
+    ]
+}
