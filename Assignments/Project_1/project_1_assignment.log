@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  11 SEP 2017 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  11 SEP 2017 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -56,7 +56,7 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-No file project_1_assignment.aux.
+(./project_1_assignment.aux)
 \openout1 = `project_1_assignment.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -103,8 +103,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--27
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
 (./project_1_assignment.aux) ) 
 Here is how much of TeX's memory you used:
- 1485 strings out of 494910
- 21135 string characters out of 6179836
+ 1487 strings out of 494910
+ 21185 string characters out of 6179836
  72253 words of memory out of 5000000
  4828 multiletter control sequences out of 15000+600000
  8847 words of font info for 31 fonts, out of 8000000 for 9000
@@ -118,7 +118,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project_1_assignment.pdf (2 pages, 97732 bytes).
+Output written on project_1_assignment.pdf (2 pages, 97786 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
