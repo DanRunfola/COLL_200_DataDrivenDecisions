@@ -1,0 +1,52 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{fullpage} % changes the margin
+\usepackage{listings}
+
+\begin{document}
+\noindent
+\large\textbf{Data Driven Decisionmaking} \hfill \textbf{Project 2} \\
+
+\section*{Retrieving Data from Non-traditional Sources}
+There is a well known correlation between the location of certain classes of commercial establishments and the socio-economic status of individuals living nearby (i.e., fast food, pawn shops).  Across the US, it has been hypothesized that this relationship will hold irrespective of the geographic location being studied.  In this project::\\
+(A) You will scrape information off of the web providing the geographic location of a commercial entity you believe to be correlated with socio-economic status for one US State\footnote{Excluding starbucks, as this has been used in previous studies on the topic}.
+(B) You will use this in conjunction with US Census information to build two predictive models for income - one using parametric assumptions, and another non-parametric.  You will use these models to start a discussion on if the commercial establishment you chose does tend to preference certain types of socio-economic settings.
+
+\section{Project Deliverables}
+You will need to turn in three deliverables as a part of this project:\\
+(1) A 2-page report summarizing your findings, including the following elements:
+\begin{itemize}
+\item Summary of Findings (1 paragraph summarizing everything you did and the key take-away)
+\item Figure(s) detailing your findings
+\item Data and Methods, with enough information for another practitioner to reproduce your approach (2-3 paragraphs).  Make sure you detail the two predictive approaches you selected.
+\item Results, with a written description of any tables or figures you produce (1-2 paragraphs)
+\item Table(s) detailing your findings
+\item A discussion and conclusion, covering limitations of your approach, take-aways, and next steps; this is where you should discuss how the two models you selected to contrast compared to one another. (1-2 paragraphs)
+\item A bibliography with any literature you cite.
+\end{itemize}
+(2) A CSV dataset containing the scraped data you produced.
+(3) A brief one-paragraph description of the code you used to produce 1 and 2.\\
+(4) You do not need to turn in your python code, as it will already be on the shared Jupyter hub!\\
+
+\subsection{Getting the Data}
+\subsubsection{Web Scraping}
+Web scraping is a common approach to retrieving data, but can be uniquely challenging for some sources.  As an example case, we will seek to retrieve information on the location of Starbucks within Virginia. There are two general approaches we can use to this: first, we could use the Starbucks website itself and write a custom scraping routine - however, this would be very time consuming.  Second, we can leverage other databases that have already done this for us - in this case, our example leverages data already collated by Google as a part of Google Maps.\\
+Step 1: Get a Google Maps API key.  In order to use the Google Maps database, you must register for an API key.  These are free, and can be found at: https://developers.google.com/places/web-service/get-api-key\\
+\textit{TIP: The google maps API allows only 2,500 requests to be sent to it each day, so be careful as you code!  Do small tests to make sure you'll get the results you think you need.}\\
+Step 2: ...
+
+\subsubsection{Census Data}
+While you can choose to download and re-create census data on your own using the US Census website and the "Tiger" spatial zone files, an easier alternative is to leverage an online platform built by the University of Minnesota - NHGIS https://www.nhgis.org/ . 
+
+\subsection{A simple parametric model}
+...
+
+\subsection{A simple machine learning model}
+...
+
+\section{Stretch Goals}
+These goals are optional, and worth a very small amount (up to 5\% total of your assignment grade for all goals in total) of extra credit.  Completing any one stretch goal gives you the opportunity to receive all 5 points of extra credit.\\
+(1) Scrape directly from a companies website, instead of using the Google API.\\
+(2) Add in a layer of simulated uncertainty into the Census data, and interpret your results based on this simulation.  Make sure to include a defense of your structural and distributional assumptions.\\
+(3)Conduct your analysis at multiple geographic scales using different census units and contrast your results.
+
+\end{document}
